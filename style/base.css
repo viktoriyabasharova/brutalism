@@ -6,8 +6,14 @@
     text-decoration: none;
     outline: none;
     border: none;
-    font-family: "Fustat", sans-serif;
+    font-family: var(--ff);
     font-weight: 400;
+}
+
+:root {
+    --white: #f3f3f3;
+    --ff: "Fustat", sans-serif;
+    --gray: #b5b5b5;
 }
 
 .container {
