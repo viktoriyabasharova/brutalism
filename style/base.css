@@ -1,31 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    font-family: var(--ff);
-    font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: var(--ff);
+  font-weight: 400;
 }
 
 :root {
-    --white: #f3f3f3;
-    --ff: "Fustat", sans-serif;
-    --gray: #b5b5b5;
-    --bg: #1c1c1c;
+  --white: #f3f3f3;
+  --ff: "Fustat", sans-serif;
+  --gray: #b5b5b5;
+  --bg: #1c1c1c;
 }
 
 body {
-    background: var(--bg);
-    min-width: 320px;
+  background: var(--bg);
+  min-width: 320px;
+  color: var(--white);
+}
+
+button {
+  background: transparent;
 }
 
 .container {
-    max-width: 1140px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1140px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sub__title {
+  font-family: var(--ff);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 90%;
+  color: var(--white);
 }
