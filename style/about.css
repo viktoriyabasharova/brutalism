@@ -1,11 +1,13 @@
 .about {
   padding: 140px 0 162px;
 }
+
 .about__wrap {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
+
 .about__desc {
   max-width: 445px;
   width: 100%;
@@ -29,9 +31,10 @@
 }
 .about__desc-btm {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
+
 .about__desc-btm_text {
   font-family: var(--ff);
   font-weight: 400;
@@ -40,14 +43,17 @@
   color: var(--white);
   text-transform: uppercase;
 }
+
 .about__img {
   max-width: 540px;
   width: 100%;
 }
+
 .about__img img {
   width: 100%;
   height: 100%;
 }
+
 .about__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -61,6 +67,7 @@
   gap: 30px;
   position: relative;
 }
+
 .grid__card-title {
   font-family: var(--ff);
   font-weight: 400;
@@ -68,7 +75,6 @@
   line-height: 90%;
   color: var(--white);
 }
-
 .grid__card-desc {
   font-family: var(--ff);
   font-weight: 300;
@@ -76,22 +82,22 @@
   line-height: 140%;
   color: var(--gray);
 }
+
 .grid__card::after {
   content: "";
   display: block;
   position: absolute;
   width: 75%;
-  height: 1;
+  height: 1px;
   background: var(--white);
   left: 0;
   top: 50px;
 }
-@media screen and (max-width: 920px){
-    .about__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (max-width: 920px) {
+  .about__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-    
 @media screen and (max-width: 860px) {
   .about__wrap {
     flex-direction: column;
@@ -111,14 +117,15 @@
     max-width: none;
   }
 }
+
 @media screen and (max-width: 568px) {
-    .about__grid {
-        grid-template-columns: 1fr;
-    }
-    .grid__card{
-align-items: center;
-    }
-    .grid__card::after {
-width: 100%;
-    }
+  .about__grid {
+    grid-template-columns: 1fr;
   }
+  .grid__card {
+    align-items: center;
+  }
+  .grid__card::after {
+    width: 100%;
+  }
+}
